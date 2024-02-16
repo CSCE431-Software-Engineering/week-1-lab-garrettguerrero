@@ -12,8 +12,17 @@
   <% end %>
 
   <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.label :title %>
+    <%= form.text_field :title, required: true %>
+
+    <%= form.label :author %>
+    <%= form.text_field :author, required: true %>
+
+    <%= form.label :price %>
+    <%= form.number_field :price, required: true %>
+
+    <%= form.label :published_date %>
+    <%= form.date_field :published_date, required: true %>
   </div>
 
   <div>
